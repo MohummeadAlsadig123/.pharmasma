@@ -1,0 +1,11 @@
+{
+  "name": "PharmaSmart AI Management",
+  "description": "An advanced pharmacy management system featuring AI-driven medicine decision support, inventory tracking, and secure license key management.",
+  "requestFramePermissions": [
+    "camera",
+    "usb"
+  ],
+  "usb": {
+    "description": "Used to connect to physical Thermal Receipt Printers via USB OTG."
+  }
+}

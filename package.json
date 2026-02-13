@@ -1,0 +1,38 @@
+
+{
+  "name": "pharmasmart-pro-desktop",
+  "version": "2.1.0",
+  "description": "Professional AI Pharmacy Management System for Windows",
+  "main": "electron-main.js",
+  "author": "PharmaSmart Team",
+  "license": "Proprietary",
+  "scripts": {
+    "start": "electron .",
+    "build:win": "electron-builder --windows",
+    "dist": "electron-builder"
+  },
+  "dependencies": {
+    "@google/genai": "^1.40.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "recharts": "^3.7.0"
+  },
+  "devDependencies": {
+    "electron": "^32.0.0",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.pharmasmart.app",
+    "productName": "PharmaSmart Pro",
+    "win": {
+      "target": [
+        "portable",
+        "nsis"
+      ],
+      "icon": "icon.ico"
+    },
+    "directories": {
+      "output": "dist"
+    }
+  }
+}
